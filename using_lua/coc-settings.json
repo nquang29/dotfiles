@@ -1,0 +1,38 @@
+{
+  "languageserver": {
+    "golang": {
+      "enable": true,
+      "formatterPriority": 0,
+      "rootPatterns": ["go.mod", ".vim/", ".git/"],
+      "command": "gopls",
+      "trace.server": "verbose",
+      "filetypes": ["go"]
+    }
+  },
+  "diagnostic.level": "information",
+  "diagnostic.signPriority": 10,
+  "diagnostic.checkCurrentLine": true,
+  "diagnostic.virtualText": true,
+  "diagnostic.errorSign": "💥",
+  "diagnostic.infoSign": "ℹ",
+  "diagnostic.hintSign": "➤",
+  "diagnostic.enableHighlightLineNumber": true,
+  "coc.source.file.enable": true,
+  "coc.source.file.trimSameExts": [".ts", ".js", ".go"],
+  "coc.preferences.formatOnType": true,
+  "coc.source.around.enable": true,
+  "coc.preferences.formatOnSaveFiletypes": [
+    "go",
+    "markdown",
+    "javascript",
+    "typescript",
+    "json",
+    "jsonc"
+  ],
+  "suggest.autoTrigger": "always",
+  "suggest.triggerCompletionWait": 50,
+  "suggest.removeDuplicateItems": true,
+  "suggest.detailField": "abbr",
+  "suggest.selection": "first",
+  "suggest.labelMaxLength": 500
+}
